@@ -3,8 +3,8 @@ import '../styles/Header.css';
 
 export const Header = props => {
   return (
-    <div id="hdr">
-      <header className="Header">
+    <div className="header-div">
+      <header className="app-header">
         <h2>{props.text}</h2>
       </header>
     </div>
