@@ -7,6 +7,9 @@ describe('React-hooks-movie-search', () => {
   const wrapper = mount(<App />);
 
   describe('App.js', () => {
+    it('should render without crashing', () => {
+      wrapper;
+    });
     it('should render a header component', () => {
       expect(wrapper.find('Header')).to.have.lengthOf(1);
     });

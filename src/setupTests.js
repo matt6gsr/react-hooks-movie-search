@@ -20,10 +20,10 @@ function copyProps(src, target) {
   Object.defineProperties(target, props);
 }
 
-/*global global */
-global.window = window;
-global.document = window.document;
-global.navigator = {
-  userAgent: 'node.js'
-};
+// /*global global */
+// global.window = window;
+// global.document = window.document;
+// global.navigator = {
+//   userAgent: 'node.js'
+// };
 copyProps(window, global);
