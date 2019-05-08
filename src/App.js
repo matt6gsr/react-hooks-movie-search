@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/App.css';
-import Header from './Header';
+import './App.css';
+import Header from './components/Header';
 
-function App() {
+export function App() {
   return (
     <div className="App">
       <Header />
