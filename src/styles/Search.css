@@ -1,0 +1,53 @@
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+input[type='submit'] {
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  width: 80px;
+  height: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+input[type='submit']:hover {
+  background-color: #282c34;
+  color: antiquewhite;
+}
+
+.search > input[type='text'] {
+  width: 20%;
+  min-width: 170px;
+  font-size: 15px;
+  border: 1px solid rgb(146, 142, 142);
+}
+
+.add-movies {
+  text-align: center;
+}
+.add-movies button {
+  font-size: 16px;
+  padding: 8px;
+  margin: 0 10px 30px 10px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.movies span {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
