@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { css } from '@emotion/core';
 import { ClipLoader } from 'react-spinners';
 import '../styles/Spinner.css';
@@ -9,20 +9,12 @@ const override = css`
   border-color: red;
 `;
 
-class Spinner extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: true
-    };
-  }
-  render() {
-    return (
-      <div className="sweet-loading">
-        <ClipLoader css={override} size={100} loading={this.state.loading} />
-      </div>
-    );
-  }
-}
+export const Spinner = props => {
+  const [loading] = useState(true);
 
-export default Spinner;
+  return (
+    <div className="sweet-loading">
+      <ClipLoader css={override} size={100} loading={loading} />
+    </div>
+  );
+};

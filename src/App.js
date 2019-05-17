@@ -3,7 +3,7 @@ import './App.css';
 import { Header } from './components/Header';
 import { Movie } from './components/Movie';
 import { Search } from './components/Search';
-import Spinner from './components/Spinner';
+import { Spinner } from './components/Spinner';
 import { MOVIE_API_URL, BASE_URL, MY_API_KEY } from './config';
 
 const initialState = {
@@ -11,6 +11,7 @@ const initialState = {
   movies: [],
   errorMessage: null
 };
+
 const reducer = (state, action) => {
   switch (action.type) {
     case 'SEARCH_MOVIES_REQUEST':

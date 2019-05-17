@@ -10,8 +10,8 @@
 input[type='submit'] {
   padding: 5px;
   background-color: transparent;
-  color: black;
-  border: 1px solid black;
+  color: #3a465e;
+  border: 1px solid #3a465e;
   width: 80px;
   height: 30px;
   margin-left: 5px;
@@ -20,15 +20,16 @@ input[type='submit'] {
 }
 
 input[type='submit']:hover {
-  background-color: #282c34;
-  color: antiquewhite;
+  background-color: #3a465e;
+  color: white;
 }
 
 .search > input[type='text'] {
   width: 20%;
   min-width: 170px;
-  font-size: 15px;
-  border: 1px solid rgb(146, 142, 142);
+  font-size: 17px;
+  border: 1px solid #3a465e;
+  color: #3a465e;
 }
 
 .add-movies {
