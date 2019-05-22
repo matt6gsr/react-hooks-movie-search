@@ -48,4 +48,4 @@ This will start the app running on localhost, port 3000.
 - [Node](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/)
 - [ReactJS](https://reactjs.org/)
-- [@reach/router](https://reach.tech/router)
+- [ReactJS Hooks](https://reactjs.org/docs/hooks-intro.html)
