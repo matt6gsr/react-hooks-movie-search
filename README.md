@@ -1,8 +1,6 @@
 ## React Hooks Film Search
 
-This React project is a small film search app displaying the use of new React Hooks, in particular useState, useReducer and useEffect in functional components instead of using class components. It uses the [OMDB](http://www.omdbapi.com/) api to retrive the results of the search. To view the deployed version of this app please visit the link below:
-
-[React Hooks Film Search]()
+This React project is a small film search app displaying the use of new React Hooks, in particular useState, useReducer and useEffect in functional components instead of using class components. It uses the [OMDB](http://www.omdbapi.com/) api to retrive the results of the search. The api returns a maximum of 10 results.
 
 ## Getting Started
 
