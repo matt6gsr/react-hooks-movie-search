@@ -13,5 +13,8 @@ describe('React-hooks-movie-search', () => {
     it('should render a header component', () => {
       expect(wrapper.find('Header')).to.have.lengthOf(1);
     });
+    it('should render a movie component', () => {
+      expect(wrapper.find('Movie')).to.have.lengthOf(1);
+    });
   });
 });
