@@ -30,5 +30,6 @@ describe('Movie.jsx', () => {
   });
   it('should render a p tag displaying the year the movie was made', () => {
     expect(movieP).to.have.lengthOf(1);
+    expect(movieP.text).to.equal('2019');
   });
 });

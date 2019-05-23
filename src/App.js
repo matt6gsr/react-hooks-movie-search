@@ -1,5 +1,6 @@
 import React, { useReducer, useEffect } from 'react';
 import './App.css';
+import fetch from 'node-fetch';
 import { Header } from './components/Header';
 import { Movie } from './components/Movie';
 import { Search } from './components/Search';
