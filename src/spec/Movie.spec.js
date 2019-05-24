@@ -11,8 +11,8 @@ describe('Movie.jsx', () => {
   const movieImg = wrapper.find('img').props();
   const movieP = wrapper.find('p');
 
-  it('should render 2 div tags', () => {
-    expect(movieDiv).to.have.lengthOf(2);
+  it('should render 3 div tags', () => {
+    expect(movieDiv).to.have.lengthOf(3);
   });
   it('should render one of the div tags with a class name of "movie"', () => {
     expect(movieDiv.first().hasClass('movie')).to.equal(true);
@@ -22,7 +22,6 @@ describe('Movie.jsx', () => {
     expect(movieH2.text()).to.equal('Test Title');
   });
   it('should render an image of the movies poster', () => {
-    expect(movieImg.width).to.equal('200');
     expect(movieImg.src).to.equal(
       'https://www.vintagemovieposters.co.uk/wp-content/uploads/2015/07/starwarsfactorshidebrandtlarge1.jpg'
     );
@@ -30,6 +29,6 @@ describe('Movie.jsx', () => {
   });
   it('should render a p tag displaying the year the movie was made', () => {
     expect(movieP).to.have.lengthOf(1);
-    expect(movieP.text).to.equal('2019');
+    expect(movieP.text()).to.equal('(2019)');
   });
 });
