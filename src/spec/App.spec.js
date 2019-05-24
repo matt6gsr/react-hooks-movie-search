@@ -19,10 +19,10 @@ describe('React-hooks-movie-search', () => {
     it('should render a Spinner', () => {
       expect(wrapper.find('Spinner')).to.have.lengthOf(1);
     });
-    it('should render a Movie component once the api results return', () => {
-      expect(wrapper.find('Movie')).to.have.length(0);
-      // wrapper.update();
-      // expect(wrapper.find('Movie')).to.have.length(1);
-    });
+    // it('should render a Movie component once the api results return', () => {
+    //   expect(wrapper.find('Movie')).to.have.length(0);
+    // wrapper.update();
+    // expect(wrapper.find('Movie')).to.have.length(1);
+    // });
   });
 });
