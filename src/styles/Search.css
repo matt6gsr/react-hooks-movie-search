@@ -45,6 +45,7 @@ input[type='submit']:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
 }
 
 .movies span {
