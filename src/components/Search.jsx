@@ -14,16 +14,22 @@ export const Search = props => {
 
   const callSearchFunction = event => {
     event.preventDefault();
-    props.search(searchValue);
-    resetInputField();
+    if (searchValue.length >= 3) {
+      props.search(searchValue);
+      resetInputField();
+    } else {
+    }
   };
 
   return (
     <form className="search">
       <input
+        placeholder="Minimum 3 characters"
         type="text"
         value={searchValue}
         onChange={handleSearchInputChanges}
+        required
+        pattern="/^[a-zA-Z]{3,}$/"
       />
       <input type="submit" onClick={callSearchFunction} value="SEARCH" />
     </form>

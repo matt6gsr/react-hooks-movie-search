@@ -75,7 +75,7 @@ export const App = () => {
 
   return (
     <div className="App">
-      <Header text="React Hooks Film Search" />
+      <Header text="React Hooks Film Search" search={search} />
       <p className="app-intro">Search for your favorite films</p>
       <Search search={search} />
       <div className="movies">
