@@ -26,7 +26,7 @@ input[type='submit']:hover {
 
 .search > input[type='text'] {
   width: 20%;
-  min-width: 170px;
+  min-width: 180px;
   font-size: 17px;
   border: 1px solid #3a465e;
   color: #3a465e;
