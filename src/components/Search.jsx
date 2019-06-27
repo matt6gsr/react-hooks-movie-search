@@ -14,11 +14,8 @@ export const Search = props => {
 
   const callSearchFunction = event => {
     event.preventDefault();
-    if (searchValue.length >= 3) {
-      props.search(searchValue);
-      resetInputField();
-    } else {
-    }
+    props.search(searchValue);
+    resetInputField();
   };
 
   return (
